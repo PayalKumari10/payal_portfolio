@@ -75,9 +75,10 @@ const Contact = () => {
       alert("Phone number must be exactly 10 digits long.");
       return;
     }
+      console.log(process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT)
 
     // Submit the form using Formspree
-    const response = await fetch('NEXT_PUBLIC_FORMSPREE_ENDPOINT', {
+    const response = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
