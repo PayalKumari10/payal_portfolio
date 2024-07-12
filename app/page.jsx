@@ -7,7 +7,7 @@ import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
 const Home = () => {
-   const CV = "/resume/PayalKri_resume11.pdf";
+   const CV = "/resume/PayalKri_resume..pdf";
   
 
   return (
